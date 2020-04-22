@@ -40,7 +40,7 @@ foreach(testSrc ${TESTS_SRCS})
     #link to Boost libraries AND your targets and dependencies
     target_link_libraries(${testName} ${TestHelpers} ${Boost_LIBRARIES} HMM)
     
-    add_test(hmm_${testName} ${testName})
+    add_test(${testName} ${testName})
 endforeach(testSrc)
 
 # set(testName "main_test")
