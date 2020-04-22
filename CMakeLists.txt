@@ -29,16 +29,29 @@ include_directories (${Boost_INCLUDE_DIRS} ${HMMsrc} ${TEST_HELPERS_DIR})
 
 set(TESTS_SRCS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/tests)
 
+file(GLOB TESTS_SRCS ${TESTS_SRCS_DIR}/*.cpp)
+foreach(testSrc ${TESTS_SRCS})
+    #Extract the filename without an extension (NAME_WE)
+    get_filename_component(testName ${testSrc} NAME_WE)
 
+    #Add compile target
+    add_executable(${testName} ${testSrc})
 
-set(testName "main_test")
-set(testSrc "main_test.cpp")
+    #link to Boost libraries AND your targets and dependencies
+    target_link_libraries(${testName} ${TestHelpers} ${Boost_LIBRARIES} HMM)
+    
+    add_test(hmm_${testName} ${testName})
+endforeach(testSrc)
 
-#Add compile target
-add_executable(${testName} ${TESTS_SRCS_DIR}/${testSrc})
+# set(testName "main_test")
+# set(testSrc "main_test.cpp")
 
-#link to Boost libraries AND your targets and dependencies
-target_link_libraries(${testName} ${TestHelpers} ${Boost_LIBRARIES} HMM)
+# #Add compile target
+# add_executable(${testName} ${TESTS_SRCS_DIR}/${testSrc})
 
-# retister test for cmake test runner
-add_test(hmm_${testName} ${testName})
+# #link to Boost libraries AND your targets and dependencies
+# target_link_libraries(${testName} ${TestHelpers} ${Boost_LIBRARIES} HMM)
+
+# # retister test for cmake test runner
+# add_test(hmm_${testName} ${testName})
+

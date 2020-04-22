@@ -14,6 +14,7 @@ take care of operator overloading also for these functions:
 - hmm_vec4 &operator+=(hmm_vec4 &Left, hmm_vec4 Right);
 - hmm_mat4 &operator+=(hmm_mat4 &Left, hmm_mat4 Right);
 */
+#define BOOST_TEST_MAIN 
 #pragma once
 #include <boost/test/unit_test.hpp>
 #include "test_helpers.hpp"

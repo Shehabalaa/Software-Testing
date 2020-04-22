@@ -4,6 +4,7 @@ this file should cover the following functions in hmm.h
 - float HMM_DotVec3(hmm_vec3 VecOne, hmm_vec3 VecTwo);
 - float HMM_DotVec4(hmm_vec4 VecOne, hmm_vec4 VecTwo);
 */
+#define BOOST_TEST_MAIN 
 #pragma once
 #include <boost/test/unit_test.hpp>
 

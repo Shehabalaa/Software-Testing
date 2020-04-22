@@ -1,97 +1,99 @@
+#define BOOST_TEST_MAIN 
 #pragma once
 #include <boost/test/unit_test.hpp>
+
 #include "test_helpers.hpp"
 
-BOOST_AUTO_TEST_SUITE(S_HMM_AddVec2_op)
+BOOST_AUTO_TEST_SUITE(S_HMM_SubtractVec2_op)
 
 BOOST_AUTO_TEST_CASE(TC1_zeros) {
     hmm_vec2 left = HMM_Vec2i(0, 0), right = HMM_Vec2i(0, 0);
-    auto res = left + right;
+    auto res = left - right;
     BOOST_TEST(res.X == 0);
     BOOST_TEST(res.Y == 0);
 
     left = HMM_Vec2i(0, 0);
     right = HMM_Vec2i(-5, 546);
-    res = left + right;
-    BOOST_TEST(res.X == right.X);
-    BOOST_TEST(res.Y == right.Y);
+    res = left - right;
+    BOOST_TEST(res.X == -1 * right.X);
+    BOOST_TEST(res.Y == -1 * right.Y);
 
     left = HMM_Vec2i(274, -765);
     right = HMM_Vec2i(0, 0);
-    res = left + right;
+    res = left - right;
     BOOST_TEST(res.X == left.X);
     BOOST_TEST(res.Y == left.Y);
 }
 
 BOOST_AUTO_TEST_CASE(TC2_positives) {
     hmm_vec2 left = HMM_Vec2i(52, 14), right = HMM_Vec2i(174, 156);
-    auto res = left + right;
-    BOOST_TEST(res.X == 52 + 174);
-    BOOST_TEST(res.Y == 14 + 156);
+    auto res = left - right;
+    BOOST_TEST(res.X == 52 - 174);
+    BOOST_TEST(res.Y == 14 - 156);
 
     left = HMM_Vec2i(12, 21);
     right = HMM_Vec2i(15, 72);
-    res = left + right;
-    BOOST_TEST(res.X == 12 + 15);
-    BOOST_TEST(res.Y == 21 + 72);
+    res = left - right;
+    BOOST_TEST(res.X == 12 - 15);
+    BOOST_TEST(res.Y == 21 - 72);
 }
 
 BOOST_AUTO_TEST_CASE(TC3_negatives) {
     hmm_vec2 left = HMM_Vec2i(-789, -452), right = HMM_Vec2i(-451, -5146);
-    auto res = left + right;
-    BOOST_TEST(res.X == -1 * (789 + 451));
-    BOOST_TEST(res.Y == -1 * (452 + 5146));
+    auto res = left - right;
+    BOOST_TEST(res.X == -1 * (789 - 451));
+    BOOST_TEST(res.Y == -1 * (452 - 5146));
 
     left = HMM_Vec2i(-10, -11);
     right = HMM_Vec2i(-11, -10);
-    res = left + right;
-    BOOST_TEST(res.X == -1 * (10 + 11));
-    BOOST_TEST(res.Y == -1 * (11 + 10));
+    res = left - right;
+    BOOST_TEST(res.X == -1 * (10 - 11));
+    BOOST_TEST(res.Y == -1 * (11 - 10));
 }
 
 BOOST_AUTO_TEST_CASE(TC4_posNeg) {
     hmm_vec2 left = HMM_Vec2i(-457, 155), right = HMM_Vec2i(235, -4654);
-    auto res = left + right;
-    BOOST_TEST(res.X == 235 - 457);
-    BOOST_TEST(res.Y == 155 - 4654);
+    auto res = left - right;
+    BOOST_TEST(res.X == -457 - 235);
+    BOOST_TEST(res.Y == 155 + 4654);
 
     left = HMM_Vec2i(548, -654);
     right = HMM_Vec2i(-7317, 1254);
-    res = left + right;
-    BOOST_TEST(res.X == 548 - 7317);
-    BOOST_TEST(res.Y == 1254 - 654);
+    res = left - right;
+    BOOST_TEST(res.X == 548 + 7317);
+    BOOST_TEST(res.Y == -654 - 1254);
 }
 
 BOOST_AUTO_TEST_CASE(TC5_largeNumbers, TOLERANCE) {
     hmm_vec2 left = HMM_Vec2i(INT_MAX, INT_MAX), right = HMM_Vec2i(INT_MAX, -1 * INT_MAX);
-    auto res = left + right;
-    BOOST_TEST(res.X == 2.0 * INT_MAX);
-    BOOST_TEST(res.Y == 0);
+    auto res = left - right;
+    BOOST_TEST(res.X == 0);
+    BOOST_TEST(res.Y == 2.0 * INT_MAX);
 }
 
 BOOST_AUTO_TEST_SUITE_END()
-#pragma endregion HMM_AddVec2
+#pragma endregion HMM_SubtractVec2
 
-#pragma region R_HMM_AddVec3
-BOOST_AUTO_TEST_SUITE(S_HMM_AddVec3_op)
+#pragma region R_HMM_SubtractVec3_op
+BOOST_AUTO_TEST_SUITE(S_HMM_SubtractVec3_op)
 
 BOOST_AUTO_TEST_CASE(TC1_zeros) {
     hmm_vec3 left = HMM_Vec3i(0, 0, 0), right = HMM_Vec3i(0, 0, 0);
-    auto res = left + right;
+    auto res = left - right;
     BOOST_TEST(res.X == 0);
     BOOST_TEST(res.Y == 0);
     BOOST_TEST(res.Z == 0);
 
     left = HMM_Vec3i(0, 0, 0);
     right = HMM_Vec3i(-5, 546, 6463);
-    res = left + right;
-    BOOST_TEST(res.X == right.X);
-    BOOST_TEST(res.Y == right.Y);
-    BOOST_TEST(res.Z == right.Z);
+    res = left - right;
+    BOOST_TEST(res.X == -1 * right.X);
+    BOOST_TEST(res.Y == -1 * right.Y);
+    BOOST_TEST(res.Z == -1 * right.Z);
 
     left = HMM_Vec3i(274, -765, -452369);
     right = HMM_Vec3i(0, 0, 0);
-    res = left + right;
+    res = left - right;
     BOOST_TEST(res.X == left.X);
     BOOST_TEST(res.Y == left.Y);
     BOOST_TEST(res.Z == left.Z);
@@ -99,66 +101,66 @@ BOOST_AUTO_TEST_CASE(TC1_zeros) {
 
 BOOST_AUTO_TEST_CASE(TC2_positives) {
     hmm_vec3 left = HMM_Vec3i(52, 14, 1254), right = HMM_Vec3i(174, 156, 9452);
-    auto res = left + right;
-    BOOST_TEST(res.X == 52 + 174);
-    BOOST_TEST(res.Y == 14 + 156);
-    BOOST_TEST(res.Z == 1254 + 9452);
+    auto res = left - right;
+    BOOST_TEST(res.X == 52 - 174);
+    BOOST_TEST(res.Y == 14 - 156);
+    BOOST_TEST(res.Z == 1254 - 9452);
 
     left = HMM_Vec3i(12, 21, 2);
     right = HMM_Vec3i(15, 72, 1);
-    res = left + right;
-    BOOST_TEST(res.X == 12 + 15);
-    BOOST_TEST(res.Y == 21 + 72);
-    BOOST_TEST(res.Z == 2 + 1);
+    res = left - right;
+    BOOST_TEST(res.X == 12 - 15);
+    BOOST_TEST(res.Y == 21 - 72);
+    BOOST_TEST(res.Z == 2 - 1);
 }
 
 BOOST_AUTO_TEST_CASE(TC3_negatives) {
     hmm_vec3 left = HMM_Vec3i(-789, -452, -88875), right = HMM_Vec3i(-451, -5146, -3654);
-    auto res = left + right;
-    BOOST_TEST(res.X == -1 * (789 + 451));
-    BOOST_TEST(res.Y == -1 * (452 + 5146));
-    BOOST_TEST(res.Z == -1 * (88875 + 3654));
+    auto res = left - right;
+    BOOST_TEST(res.X == -1 * (789 - 451));
+    BOOST_TEST(res.Y == -1 * (452 - 5146));
+    BOOST_TEST(res.Z == -1 * (88875 - 3654));
 
     left = HMM_Vec3i(-10, -11, -5);
     right = HMM_Vec3i(-11, -10, -5);
-    res = left + right;
-    BOOST_TEST(res.X == -1 * (10 + 11));
-    BOOST_TEST(res.Y == -1 * (11 + 10));
-    BOOST_TEST(res.Z == -1 * (5 + 5));
+    res = left - right;
+    BOOST_TEST(res.X == -1 * (10 - 11));
+    BOOST_TEST(res.Y == -1 * (11 - 10));
+    BOOST_TEST(res.Z == -1 * (5 - 5));
 }
 
 BOOST_AUTO_TEST_CASE(TC4_posNeg) {
     hmm_vec3 left = HMM_Vec3i(-457, 155, 254), right = HMM_Vec3i(235, -4654, -147258);
-    auto res = left + right;
-    BOOST_TEST(res.X == 235 - 457);
-    BOOST_TEST(res.Y == 155 - 4654);
-    BOOST_TEST(res.Z == 254 - 147258);
+    auto res = left - right;
+    BOOST_TEST(res.X == -457 - 235);
+    BOOST_TEST(res.Y == 155 + 4654);
+    BOOST_TEST(res.Z == 254 + 147258);
 
     left = HMM_Vec3i(548, -654, -6841);
     right = HMM_Vec3i(-7317, 1254, 1486);
-    res = left + right;
-    BOOST_TEST(res.X == 548 - 7317);
-    BOOST_TEST(res.Y == 1254 - 654);
-    BOOST_TEST(res.Z == 1486 - 6841);
+    res = left - right;
+    BOOST_TEST(res.X == 548 + 7317);
+    BOOST_TEST(res.Y == -654 - 1254);
+    BOOST_TEST(res.Z == -6841 - 1486);
 }
 
 BOOST_AUTO_TEST_CASE(TC5_largeNumbers, TOLERANCE) {
     hmm_vec3 left = HMM_Vec3i(INT_MAX, INT_MAX, -1 * INT_MAX), right = HMM_Vec3i(INT_MAX, -1 * INT_MAX, -1 * INT_MAX);
-    auto res = left + right;
-    BOOST_TEST(res.X == 2.0 * INT_MAX);
-    BOOST_TEST(res.Y == 0);
-    BOOST_TEST(res.Z == -2.0 * INT_MAX);
+    auto res = left - right;
+    BOOST_TEST(res.X == 0);
+    BOOST_TEST(res.Y == 2.0 * INT_MAX);
+    BOOST_TEST(res.Z == 0);
 }
 
 BOOST_AUTO_TEST_SUITE_END()
-#pragma endregion HMM_AddVec3
+#pragma endregion HMM_SubtractVec3
 
-#pragma region R_HMM_AddVec4
-BOOST_AUTO_TEST_SUITE(S_HMM_AddVec4_op)
+#pragma region R_HMM_SubtractVec4_op
+BOOST_AUTO_TEST_SUITE(S_HMM_SubtractVec4_op)
 
 BOOST_AUTO_TEST_CASE(TC1_zeros) {
     hmm_vec4 left = HMM_Vec4i(0, 0, 0, 0), right = HMM_Vec4i(0, 0, 0, 0);
-    auto res = left + right;
+    auto res = left - right;
     BOOST_TEST(res.X == 0);
     BOOST_TEST(res.Y == 0);
     BOOST_TEST(res.Z == 0);
@@ -166,15 +168,15 @@ BOOST_AUTO_TEST_CASE(TC1_zeros) {
 
     left = HMM_Vec4i(0, 0, 0, 0);
     right = HMM_Vec4i(-5, 546, 6463, -654323);
-    res = left + right;
-    BOOST_TEST(res.X == right.X);
-    BOOST_TEST(res.Y == right.Y);
-    BOOST_TEST(res.Z == right.Z);
-    BOOST_TEST(res.W == right.W);
+    res = left - right;
+    BOOST_TEST(res.X == -1 * right.X);
+    BOOST_TEST(res.Y == -1 * right.Y);
+    BOOST_TEST(res.Z == -1 * right.Z);
+    BOOST_TEST(res.W == -1 * right.W);
 
     left = HMM_Vec4i(274, -765, -452369, 5431);
     right = HMM_Vec4i(0, 0, 0, 0);
-    res = left + right;
+    res = left - right;
     BOOST_TEST(res.X == left.X);
     BOOST_TEST(res.Y == left.Y);
     BOOST_TEST(res.Z == left.Z);
@@ -183,72 +185,72 @@ BOOST_AUTO_TEST_CASE(TC1_zeros) {
 
 BOOST_AUTO_TEST_CASE(TC2_positives) {
     hmm_vec4 left = HMM_Vec4i(52, 14, 1254, 70), right = HMM_Vec4i(174, 156, 9452, 90);
-    auto res = left + right;
-    BOOST_TEST(res.X == 52 + 174);
-    BOOST_TEST(res.Y == 14 + 156);
-    BOOST_TEST(res.Z == 1254 + 9452);
-    BOOST_TEST(res.W == 70 + 90);
+    auto res = left - right;
+    BOOST_TEST(res.X == 52 - 174);
+    BOOST_TEST(res.Y == 14 - 156);
+    BOOST_TEST(res.Z == 1254 - 9452);
+    BOOST_TEST(res.W == 70 - 90);
 
     left = HMM_Vec4i(12, 21, 2, 125);
     right = HMM_Vec4i(15, 72, 1, 987);
-    res = left + right;
-    BOOST_TEST(res.X == 12 + 15);
-    BOOST_TEST(res.Y == 21 + 72);
-    BOOST_TEST(res.Z == 2 + 1);
-    BOOST_TEST(res.W == 125 + 987);
+    res = left - right;
+    BOOST_TEST(res.X == 12 - 15);
+    BOOST_TEST(res.Y == 21 - 72);
+    BOOST_TEST(res.Z == 2 - 1);
+    BOOST_TEST(res.W == 125 - 987);
 }
 
 BOOST_AUTO_TEST_CASE(TC3_negatives) {
     hmm_vec4 left = HMM_Vec4i(-789, -452, -88875, -164), right = HMM_Vec4i(-451, -5146, -3654, -461);
-    auto res = left + right;
-    BOOST_TEST(res.X == -1 * (789 + 451));
-    BOOST_TEST(res.Y == -1 * (452 + 5146));
-    BOOST_TEST(res.Z == -1 * (88875 + 3654));
-    BOOST_TEST(res.W == -1 * (164 + 461));
+    auto res = left - right;
+    BOOST_TEST(res.X == -1 * (789 - 451));
+    BOOST_TEST(res.Y == -1 * (452 - 5146));
+    BOOST_TEST(res.Z == -1 * (88875 - 3654));
+    BOOST_TEST(res.W == -1 * (164 - 461));
 
     left = HMM_Vec4i(-10, -11, -5, -1);
     right = HMM_Vec4i(-11, -10, -5, -2);
-    res = left + right;
-    BOOST_TEST(res.X == -1 * (10 + 11));
-    BOOST_TEST(res.Y == -1 * (11 + 10));
-    BOOST_TEST(res.Z == -1 * (5 + 5));
-    BOOST_TEST(res.W == -1 * (1 + 2));
+    res = left - right;
+    BOOST_TEST(res.X == -1 * (10 - 11));
+    BOOST_TEST(res.Y == -1 * (11 - 10));
+    BOOST_TEST(res.Z == -1 * (5 - 5));
+    BOOST_TEST(res.W == -1 * (1 - 2));
 }
 
 BOOST_AUTO_TEST_CASE(TC4_posNeg) {
     hmm_vec4 left = HMM_Vec4i(-457, 155, 254, -379), right = HMM_Vec4i(235, -4654, -147258, 973);
-    auto res = left + right;
-    BOOST_TEST(res.X == 235 - 457);
-    BOOST_TEST(res.Y == 155 - 4654);
-    BOOST_TEST(res.Z == 254 - 147258);
-    BOOST_TEST(res.W == 973 - 379);
+    auto res = left - right;
+    BOOST_TEST(res.X == -457 - 235);
+    BOOST_TEST(res.Y == 155 + 4654);
+    BOOST_TEST(res.Z == 254 + 147258);
+    BOOST_TEST(res.W == -379 - 973);
 
     left = HMM_Vec4i(548, -654, -6841, 528);
     right = HMM_Vec4i(-7317, 1254, 1486, -825);
-    res = left + right;
-    BOOST_TEST(res.X == 548 - 7317);
-    BOOST_TEST(res.Y == 1254 - 654);
-    BOOST_TEST(res.Z == 1486 - 6841);
-    BOOST_TEST(res.W == 528 - 825);
+    res = left - right;
+    BOOST_TEST(res.X == 548 + 7317);
+    BOOST_TEST(res.Y == -654 - 1254);
+    BOOST_TEST(res.Z == -6841 - 1486);
+    BOOST_TEST(res.W == 528 + 825);
 }
 
 BOOST_AUTO_TEST_CASE(TC5_largeNumbers, TOLERANCE) {
-    hmm_vec4 left = HMM_Vec4i(INT_MAX, INT_MAX, -1 * INT_MAX, INT_MAX), right = HMM_Vec4i(INT_MAX, -1 * INT_MAX, -1 * INT_MAX, INT_MAX);
-    auto res = left + right;
-    BOOST_TEST(res.X == 2.0 * INT_MAX);
-    BOOST_TEST(res.Y == 0);
-    BOOST_TEST(res.Z == -2.0 * INT_MAX);
-    BOOST_TEST(res.W == 2.0 * INT_MAX);
+    hmm_vec4 left = HMM_Vec4i(INT_MAX, INT_MAX, -1 * INT_MAX, -1 * INT_MAX), right = HMM_Vec4i(INT_MAX, -1 * INT_MAX, -1 * INT_MAX, INT_MAX);
+    auto res = left - right;
+    BOOST_TEST(res.X == 0);
+    BOOST_TEST(res.Y == 2.0 * INT_MAX);
+    BOOST_TEST(res.Z == 0);
+    BOOST_TEST(res.W == -2.0 * INT_MAX);
 }
 
 BOOST_AUTO_TEST_SUITE_END()
-#pragma endregion HMM_AddVec4
+#pragma endregion HMM_SubtractVec4
 
-#pragma region R_HMM_AddMat4
-BOOST_AUTO_TEST_SUITE(S_HMM_AddMat4_op)
+#pragma region R_HMM_SubtractMat4_op
+BOOST_AUTO_TEST_SUITE(S_HMM_SubtractMat4_op)
 BOOST_AUTO_TEST_CASE(TC1_zeros) {
     hmm_mat4 left = HMM_Mat4(), right = HMM_Mat4();
-    auto res = left + right;
+    auto res = left - right;
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
             BOOST_TEST_INFO("i = " << i << "and j = " << j);
@@ -274,11 +276,11 @@ BOOST_AUTO_TEST_CASE(TC1_zeros) {
     right.Elements[3][1] = 69516;
     right.Elements[3][2] = 28732;
     right.Elements[3][3] = 41310;
-    res = left + right;
+    res = left - right;
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
             BOOST_TEST_INFO("i = " << i << " j = " << j);
-            BOOST_TEST(res.Elements[i][j] == right.Elements[i][j]);
+            BOOST_TEST(res.Elements[i][j] == -1 * right.Elements[i][j]);
         }
     }
 
@@ -300,7 +302,7 @@ BOOST_AUTO_TEST_CASE(TC1_zeros) {
     left.Elements[3][1] = 69516;
     left.Elements[3][2] = 28732;
     left.Elements[3][3] = 41310;
-    res = left + right;
+    res = left - right;
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
             BOOST_TEST_INFO("i = " << i << " j = " << j);
@@ -345,11 +347,11 @@ BOOST_AUTO_TEST_CASE(TC2_positives) {
     left.Elements[3][1] = 7239;
     left.Elements[3][2] = 15992;
     left.Elements[3][3] = 14221;
-    auto res = left + right;
+    auto res = left - right;
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
             BOOST_TEST_INFO("i = " << i << " j = " << j);
-            BOOST_TEST(res.Elements[i][j] == right.Elements[i][j] + left.Elements[i][j]);
+            BOOST_TEST(res.Elements[i][j] == left.Elements[i][j] - right.Elements[i][j]);
         }
     }
 
@@ -389,11 +391,11 @@ BOOST_AUTO_TEST_CASE(TC2_positives) {
     left.Elements[3][2] = 83924;
     left.Elements[3][3] = 658;
 
-    res = left + right;
+    res = left - right;
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
             BOOST_TEST_INFO("i = " << i << " j = " << j);
-            BOOST_TEST(res.Elements[i][j] == right.Elements[i][j] + left.Elements[i][j]);
+            BOOST_TEST(res.Elements[i][j] == left.Elements[i][j] - right.Elements[i][j]);
         }
     }
 }
@@ -434,11 +436,11 @@ BOOST_AUTO_TEST_CASE(TC3_negatives) {
     left.Elements[3][2] = -29079;
     left.Elements[3][3] = -47677;
 
-    auto res = left + right;
+    auto res = left - right;
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
             BOOST_TEST_INFO("i = " << i << " j = " << j);
-            BOOST_TEST(res.Elements[i][j] == right.Elements[i][j] + left.Elements[i][j]);
+            BOOST_TEST(res.Elements[i][j] == left.Elements[i][j] - right.Elements[i][j]);
         }
     }
 
@@ -478,11 +480,11 @@ BOOST_AUTO_TEST_CASE(TC3_negatives) {
     left.Elements[3][2] = -35772;
     left.Elements[3][3] = -55770;
 
-    res = left + right;
+    res = left - right;
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
             BOOST_TEST_INFO("i = " << i << " j = " << j);
-            BOOST_TEST(res.Elements[i][j] == right.Elements[i][j] + left.Elements[i][j]);
+            BOOST_TEST(res.Elements[i][j] == left.Elements[i][j] - right.Elements[i][j]);
         }
     }
 }
@@ -523,11 +525,11 @@ BOOST_AUTO_TEST_CASE(TC4_posNeg) {
     left.Elements[3][2] = 86;
     left.Elements[3][3] = 508;
 
-    auto res = left + right;
+    auto res = left - right;
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
             BOOST_TEST_INFO("i = " << i << " j = " << j);
-            BOOST_TEST(res.Elements[i][j] == right.Elements[i][j] + left.Elements[i][j]);
+            BOOST_TEST(res.Elements[i][j] == left.Elements[i][j] - right.Elements[i][j]);
         }
     }
 
@@ -567,11 +569,11 @@ BOOST_AUTO_TEST_CASE(TC4_posNeg) {
     left.Elements[3][2] = 398;
     left.Elements[3][3] = -77;
 
-    res = left + right;
+    res = left - right;
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
             BOOST_TEST_INFO("i = " << i << " j = " << j);
-            BOOST_TEST(res.Elements[i][j] == right.Elements[i][j] + left.Elements[i][j]);
+            BOOST_TEST(res.Elements[i][j] == left.Elements[i][j] - right.Elements[i][j]);
         }
     }
 }
@@ -612,14 +614,14 @@ BOOST_AUTO_TEST_CASE(TC5_largeNumbers, TOLERANCE) {
     left.Elements[3][2] = INT_MAX;
     left.Elements[3][3] = -INT_MAX;
 
-    auto res = left + right;
+    auto res = left - right;
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
             BOOST_TEST_INFO("i = " << i << " j = " << j);
-            BOOST_TEST(res.Elements[i][j] == right.Elements[i][j] + left.Elements[i][j]);
+            BOOST_TEST(res.Elements[i][j] == left.Elements[i][j] - right.Elements[i][j]);
         }
     }
 }
 
 BOOST_AUTO_TEST_SUITE_END()
-#pragma endregion HMM_AddMat4
+#pragma endregion HMM_SubtractMat4

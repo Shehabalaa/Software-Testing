@@ -10,6 +10,7 @@ this file should cover the following functions in hmm.h
 - hmm_mat4 HMM_Mat4(void);
 - hmm_mat4 HMM_Mat4d(float Diagonal);
 */
+#define BOOST_TEST_MAIN 
 #pragma once
 #include <boost/test/unit_test.hpp>
 #include "test_helpers.hpp"
