@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION  2.8)
 project(test_game_engine CXX)
-
-set(CMAKE_CXX_FLAGS "-g  -fprofile-arcs -ftest-coverage -w")
+set(CMAKE_CXX_COMPILER clang++)
+set(CMAKE_CXX_FLAGS "-g -fembed-bitcode -fprofile-instr-generate -fcoverage-mapping -w")
 set(CMAKE_CXX_OUTPUT_EXTENSION_RELACE 1)
 
 

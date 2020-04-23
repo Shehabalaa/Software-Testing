@@ -1,0 +1,239 @@
+test_add
+------
+------
+test_add_op
+------
+------
+test_add_op2
+------
+------
+test_construction
+/home/shehab/Desktop/Software-Testing/./HMM.h:946:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:946:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:946:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:954:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:954:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:954:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:658:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:658:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:658:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:647:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:647:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:647:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:681:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:681:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:681:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:669:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:669:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:669:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:706:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:706:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:706:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:693:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:693:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:693:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:719:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:719:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:719:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+------
+------
+test_cross
+/home/shehab/Desktop/Software-Testing/./HMM.h:635:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:635:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:635:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:681:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:681:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:681:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+------
+------
+test_div
+------
+------
+test_dot
+/home/shehab/Desktop/Software-Testing/./HMM.h:615:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:615:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:615:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:681:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:681:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:681:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:658:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:658:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:658:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:605:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:605:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:605:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:706:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:706:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:706:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:625:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:625:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:625:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+------
+------
+test_graphics
+------
+------
+test_length
+/home/shehab/Desktop/Software-Testing/./HMM.h:491:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:491:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:491:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:681:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:681:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:681:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:658:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:658:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:658:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:481:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:481:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:481:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:647:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:647:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:647:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:669:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:669:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:669:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:706:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:706:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:706:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:501:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:501:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:501:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:693:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:693:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:693:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:461:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:461:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:461:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:419:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:425:14: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:426:15: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:427:11: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:419:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:425:14: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:426:15: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:427:11: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:419:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:425:14: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:426:15: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:427:11: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:451:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:451:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:451:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:471:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:471:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:471:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:615:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:615:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:615:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:605:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:605:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:605:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:625:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:625:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:625:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+------
+------
+test_lengthSquared
+/home/shehab/Desktop/Software-Testing/./HMM.h:461:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:461:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:461:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:681:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:681:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:681:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:658:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:658:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:658:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:451:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:451:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:451:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:647:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:647:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:647:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:669:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:669:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:669:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:706:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:706:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:706:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:471:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:471:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:471:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:693:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:693:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:693:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:615:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:615:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:615:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:605:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:605:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:605:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:625:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:625:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:625:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+------
+------
+test_mul
+------
+------
+test_scalarOperations
+/home/shehab/Desktop/Software-Testing/./HMM.h:410:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:410:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:410:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:419:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:425:14: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:426:15: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:427:11: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:419:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:425:14: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:426:15: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:427:11: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:419:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:425:14: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:426:15: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:427:11: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:531:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:531:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:531:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:537:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:537:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:537:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:546:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:549:6: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:553:11: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:553:18: warning: Survived: Replaced > with >= [cxx_gt_to_ge]
+/home/shehab/Desktop/Software-Testing/./HMM.h:549:13: warning: Survived: Replaced < with <= [cxx_lt_to_le]
+/home/shehab/Desktop/Software-Testing/./HMM.h:546:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:549:6: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:553:11: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:546:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:549:6: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:553:11: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+------
+------
+test_sub
+------
+------
+test_sub_op
+------
+------
+test_sub_op2
+------
+------
+test_transformations
+/home/shehab/Desktop/Software-Testing/./HMM.h:1135:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:1135:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:1135:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:669:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:669:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:669:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:954:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:954:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:954:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:946:1: warning: Survived: Replaced + with - [cxx_add_to_sub]
+/home/shehab/Desktop/Software-Testing/./HMM.h:946:1: warning: Survived: Replaced x++ with x-- [cxx_post_inc_to_post_dec]
+/home/shehab/Desktop/Software-Testing/./HMM.h:946:1: warning: Survived: Replaced ++x with --x [cxx_pre_inc_to_pre_dec]
+------
+------
+test_transpose
+------
+------
