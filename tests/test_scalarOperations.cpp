@@ -21,45 +21,45 @@ this file should cover the following functions in hmm.h
 BOOST_AUTO_TEST_SUITE(HMM_Scalar)
 
 BOOST_AUTO_TEST_CASE(SIN, TOLERANCE) {
-    BOOST_TEST(HMM_SINF(0) == sin(0));
-    BOOST_TEST(HMM_SINF(10) == sin(10));
-    BOOST_TEST(HMM_SINF(-10) == sin(-10));
-    BOOST_TEST(HMM_SINF(100) == sin(100));
-    BOOST_TEST(HMM_SINF(+0.005) == sin(+0.005));
+    BOOST_TEST(HMM_SINF(0) == sinf(0));
+    BOOST_TEST(HMM_SINF(10) == sinf(10));
+    BOOST_TEST(HMM_SINF(-10) == sinf(-10));
+    BOOST_TEST(HMM_SINF(100) == sinf(100));
+    BOOST_TEST(HMM_SINF(+0.005) == sinf(+0.005));
 }
 
 BOOST_AUTO_TEST_CASE(COS,TOLERANCE) {
-    BOOST_TEST(HMM_COSF(0) == cos(0));
-    BOOST_TEST(HMM_COSF(10) == cos(10));
-    BOOST_TEST(HMM_COSF(-10) == cos(-10));
-    BOOST_TEST(HMM_COSF(100) == cos(100));
-    BOOST_TEST(HMM_COSF(+0.005) == cos(+0.005));
+    BOOST_TEST(HMM_COSF(0) == cosf(0));
+    BOOST_TEST(HMM_COSF(10) == cosf(10));
+    BOOST_TEST(HMM_COSF(-10) == cosf(-10));
+    BOOST_TEST(HMM_COSF(100) == cosf(100));
+    BOOST_TEST(HMM_COSF(+0.005) == cosf(+0.005));
 }
 
 BOOST_AUTO_TEST_CASE(TAN,TOLERANCE) {
-    BOOST_TEST(HMM_TANF(0) == tan(0));
-    BOOST_TEST(HMM_TANF(10) == tan(10));
-    BOOST_TEST(HMM_TANF(-10) == tan(-10));
-    BOOST_TEST(HMM_TANF(90) == tan(90));
-    BOOST_TEST(HMM_TANF(HMM_PI32) == tan(HMM_PI32));
-    BOOST_TEST(HMM_TANF(+0.005) == tan(+0.005));
+    BOOST_TEST(HMM_TANF(0) == tanf(0));
+    BOOST_TEST(HMM_TANF(10) == tanf(10));
+    BOOST_TEST(HMM_TANF(-10) == tanf(-10));
+    BOOST_TEST(HMM_TANF(90) == tanf(90));
+    BOOST_TEST(HMM_TANF(HMM_PI32) == tanf(HMM_PI32));
+    BOOST_TEST(HMM_TANF(+0.005) == tanf(+0.005));
 }
 
 BOOST_AUTO_TEST_CASE(EXP,TOLERANCE) {
-    BOOST_TEST(HMM_EXPF(0) == exp(0));
-    BOOST_TEST(HMM_EXPF(10) == exp(10));
-    BOOST_TEST(HMM_EXPF(-10) == exp(-10));
-    BOOST_TEST(HMM_EXPF(90) == exp(90));
-    BOOST_TEST(HMM_EXPF(+0.005) == exp(+0.005));
+    BOOST_TEST(HMM_EXPF(0) == expf(0));
+    BOOST_TEST(HMM_EXPF(10) == expf(10));
+    BOOST_TEST(HMM_EXPF(-10) == expf(-10));
+    BOOST_TEST(HMM_EXPF(90) == expf(90));
+    BOOST_TEST(HMM_EXPF(+0.005) == expf(+0.005));
 }
 
 BOOST_AUTO_TEST_CASE(LOGF,TOLERANCE) {
-    BOOST_TEST(HMM_LOGF(0) == log(0));
-    BOOST_TEST(HMM_LOGF(1) == log(1));
-    BOOST_TEST(HMM_LOGF(10) == log(10));
-    BOOST_TEST(HMM_LOGF(-10) == log(-10));
-    BOOST_TEST(HMM_LOGF(90) == log(90));
-    BOOST_TEST(HMM_LOGF(+0.005) == log(+0.005));
+    BOOST_TEST(HMM_LOGF(0) == logf(0));
+    BOOST_TEST(HMM_LOGF(1) == logf(1));
+    BOOST_TEST(HMM_LOGF(10) == logf(10));
+    // BOOST_TEST(HMM_LOGF(-10) == logf(-10)); // -nan can't asserted with -nan
+    BOOST_TEST(HMM_LOGF(90) == logf(90));
+    BOOST_TEST(HMM_LOGF(+0.005) == logf(+0.005));
 }
 
 BOOST_AUTO_TEST_CASE(ToRadians,TOLERANCE) {

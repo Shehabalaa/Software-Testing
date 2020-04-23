@@ -53,15 +53,15 @@ BOOST_AUTO_TEST_CASE(TC4_posNeg) {
     BOOST_TEST(vec.Y == -654);
 }
 
-BOOST_AUTO_TEST_CASE(TC5_largeNumbers, TOLERANCE) {
-    auto vec = HMM_Vec2i(INT_MAX, INT_MAX);
-    BOOST_TEST(vec.X == INT_MAX);
-    BOOST_TEST(vec.Y == INT_MAX);
+// BOOST_AUTO_TEST_CASE(TC5_largeNumbers, TOLERANCE) {
+//     auto vec = HMM_Vec2i(INT_MAX, INT_MAX);
+//     BOOST_TEST(vec.X == INT_MAX);
+//     BOOST_TEST(vec.Y == INT_MAX);
 
-    vec = HMM_Vec2i(2.0 * INT_MAX, -2.0 * INT_MAX);
-    BOOST_TEST(vec.X == 2.0 * INT_MAX);
-    BOOST_TEST(vec.Y == -2.0 * INT_MAX);
-}
+//     vec = HMM_Vec2i(2.0 * INT_MAX, -2.0 * INT_MAX);
+//     BOOST_TEST(vec.X == 2.0 * INT_MAX);
+//     BOOST_TEST(vec.Y == -2.0 * INT_MAX);
+// }
 
 /*BOOST_AUTO_TEST_CASE(TC6_largeNumbers, TOLERANCE)
 {
@@ -74,9 +74,7 @@ BOOST_AUTO_TEST_CASE(TC5_largeNumbers, TOLERANCE) {
 	BOOST_TEST(vec.Y == -1.2 * INT_MAX);
 }*/
 BOOST_AUTO_TEST_SUITE_END()
-#pragma endregion HMM_Vec2i
 
-#pragma region R_HMM_Vec2
 BOOST_AUTO_TEST_SUITE(S_HMM_Vec2)
 
 BOOST_AUTO_TEST_CASE(TC1_zeros, TOLERANCE) {
@@ -115,15 +113,15 @@ BOOST_AUTO_TEST_CASE(TC4_posNeg, TOLERANCE) {
     BOOST_TEST(vec.Y == -654.4);
 }
 
-BOOST_AUTO_TEST_CASE(TC5_largeNumbers, TOLERANCE) {
-    auto vec = HMM_Vec2(INT_MAX + 0.1, INT_MAX + 0.3);
-    BOOST_TEST(vec.X == INT_MAX + 0.1);
-    BOOST_TEST(vec.Y == INT_MAX + 0.3);
+// BOOST_AUTO_TEST_CASE(TC5_largeNumbers, TOLERANCE) {
+//     auto vec = HMM_Vec2(INT_MAX + 0.1, INT_MAX + 0.3);
+//     BOOST_TEST(vec.X == INT_MAX + 0.1);
+//     BOOST_TEST(vec.Y == INT_MAX + 0.3);
 
-    vec = HMM_Vec2(2.0 * INT_MAX, -2.0 * INT_MAX);
-    BOOST_TEST(vec.X == 2.0 * INT_MAX);
-    BOOST_TEST(vec.Y == -2.0 * INT_MAX);
-}
+//     vec = HMM_Vec2(2.0 * INT_MAX, -2.0 * INT_MAX);
+//     BOOST_TEST(vec.X == 2.0 * INT_MAX);
+//     BOOST_TEST(vec.Y == -2.0 * INT_MAX);
+// }
 
 /*BOOST_AUTO_TEST_CASE(TC6_largeNumbers, TOLERANCE)
 {
@@ -136,9 +134,7 @@ BOOST_TEST(vec.X == 0.253 * INT_MAX);
 BOOST_TEST(vec.Y == -1.2 * INT_MAX);
 }*/
 BOOST_AUTO_TEST_SUITE_END()
-#pragma endregion HMM_Vec2i
 
-#pragma region R_HMM_Vec3i
 BOOST_AUTO_TEST_SUITE(S_HMM_Vec3i)
 
 BOOST_AUTO_TEST_CASE(TC1_zeros, TOLERANCE) {
@@ -184,17 +180,17 @@ BOOST_AUTO_TEST_CASE(TC4_posNeg, TOLERANCE) {
     BOOST_TEST(vec.Z == 115);
 }
 
-BOOST_AUTO_TEST_CASE(TC5_largeNumbers, TOLERANCE) {
-    auto vec = HMM_Vec3i(INT_MAX, INT_MAX, INT_MAX);
-    BOOST_TEST(vec.X == INT_MAX);
-    BOOST_TEST(vec.Y == INT_MAX);
-    BOOST_TEST(vec.Z == INT_MAX);
+// BOOST_AUTO_TEST_CASE(TC5_largeNumbers, TOLERANCE) {
+//     auto vec = HMM_Vec3i(INT_MAX, INT_MAX, INT_MAX);
+//     BOOST_TEST(vec.X == INT_MAX);
+//     BOOST_TEST(vec.Y == INT_MAX);
+//     BOOST_TEST(vec.Z == INT_MAX);
 
-    vec = HMM_Vec3i(2.0 * INT_MAX, -2.0 * INT_MAX, 2.0 * INT_MAX);
-    BOOST_TEST(vec.X == 2.0 * INT_MAX);
-    BOOST_TEST(vec.Y == -2.0 * INT_MAX);
-    BOOST_TEST(vec.Z == 2.0 * INT_MAX);
-}
+//     vec = HMM_Vec3i(2.0 * INT_MAX, -2.0 * INT_MAX, 2.0 * INT_MAX);
+//     BOOST_TEST(vec.X == 2.0 * INT_MAX);
+//     BOOST_TEST(vec.Y == -2.0 * INT_MAX);
+//     BOOST_TEST(vec.Z == 2.0 * INT_MAX);
+// }
 
 /*BOOST_AUTO_TEST_CASE(TC6_largeNumbers, TOLERANCE)
 {
@@ -207,9 +203,7 @@ BOOST_TEST(vec.X == 0.253 * INT_MAX);
 BOOST_TEST(vec.Y == -1.2 * INT_MAX);
 }*/
 BOOST_AUTO_TEST_SUITE_END()
-#pragma endregion HMM_Vec3i
 
-#pragma region R_HMM_Vec3
 BOOST_AUTO_TEST_SUITE(S_HMM_Vec3)
 
 BOOST_AUTO_TEST_CASE(TC1_zeros, TOLERANCE) {
@@ -255,17 +249,17 @@ BOOST_AUTO_TEST_CASE(TC4_posNeg, TOLERANCE) {
     BOOST_TEST(vec.Z == 115.14);
 }
 
-BOOST_AUTO_TEST_CASE(TC5_largeNumbers, TOLERANCE) {
-    auto vec = HMM_Vec3(INT_MAX + 0.1, INT_MAX + 0.2, INT_MAX - 0.1);
-    BOOST_TEST(vec.X == INT_MAX + 0.1);
-    BOOST_TEST(vec.Y == INT_MAX + 0.2);
-    BOOST_TEST(vec.Z == INT_MAX - 0.1);
+// BOOST_AUTO_TEST_CASE(TC5_largeNumbers, TOLERANCE) {
+//     auto vec = HMM_Vec3(INT_MAX + 0.1, INT_MAX + 0.2, INT_MAX - 0.1);
+//     BOOST_TEST(vec.X == INT_MAX + 0.1);
+//     BOOST_TEST(vec.Y == INT_MAX + 0.2);
+//     BOOST_TEST(vec.Z == INT_MAX - 0.1);
 
-    vec = HMM_Vec3i(2.0 * INT_MAX, -2.0 * INT_MAX, 2.0 * INT_MAX);
-    BOOST_TEST(vec.X == 2.0 * INT_MAX);
-    BOOST_TEST(vec.Y == -2.0 * INT_MAX);
-    BOOST_TEST(vec.Z == 2.0 * INT_MAX);
-}
+//     vec = HMM_Vec3i(2.0 * INT_MAX, -2.0 * INT_MAX, 2.0 * INT_MAX);
+//     BOOST_TEST(vec.X == 2.0 * INT_MAX);
+//     BOOST_TEST(vec.Y == -2.0 * INT_MAX);
+//     BOOST_TEST(vec.Z == 2.0 * INT_MAX);
+// }
 
 /*BOOST_AUTO_TEST_CASE(TC6_largeNumbers, TOLERANCE)
 {
@@ -278,9 +272,7 @@ BOOST_TEST(vec.X == 0.253 * INT_MAX);
 BOOST_TEST(vec.Y == -1.2 * INT_MAX);
 }*/
 BOOST_AUTO_TEST_SUITE_END()
-#pragma endregion HMM_Vec3i
 
-#pragma region R_HMM_Vec4i
 BOOST_AUTO_TEST_SUITE(S_HMM_Vec4i)
 
 BOOST_AUTO_TEST_CASE(TC1_zeros, TOLERANCE) {
@@ -333,19 +325,19 @@ BOOST_AUTO_TEST_CASE(TC4_posNeg, TOLERANCE) {
     BOOST_TEST(vec.W == -412);
 }
 
-BOOST_AUTO_TEST_CASE(TC5_largeNumbers, TOLERANCE) {
-    auto vec = HMM_Vec4i(INT_MAX, INT_MAX, INT_MAX, INT_MAX);
-    BOOST_TEST(vec.X == INT_MAX);
-    BOOST_TEST(vec.Y == INT_MAX);
-    BOOST_TEST(vec.Z == INT_MAX);
-    BOOST_TEST(vec.W == INT_MAX);
+// BOOST_AUTO_TEST_CASE(TC5_largeNumbers, TOLERANCE) {
+//     auto vec = HMM_Vec4i(INT_MAX, INT_MAX, INT_MAX, INT_MAX);
+//     BOOST_TEST(vec.X == INT_MAX);
+//     BOOST_TEST(vec.Y == INT_MAX);
+//     BOOST_TEST(vec.Z == INT_MAX);
+//     BOOST_TEST(vec.W == INT_MAX);
 
-    vec = HMM_Vec4i(2.0 * INT_MAX, -2.0 * INT_MAX, 2.0 * INT_MAX, -2.0 * INT_MAX);
-    BOOST_TEST(vec.X == 2.0 * INT_MAX);
-    BOOST_TEST(vec.Y == -2.0 * INT_MAX);
-    BOOST_TEST(vec.Z == 2.0 * INT_MAX);
-    BOOST_TEST(vec.W == -2.0 * INT_MAX);
-}
+//     vec = HMM_Vec4i(2.0 * INT_MAX, -2.0 * INT_MAX, 2.0 * INT_MAX, -2.0 * INT_MAX);
+//     BOOST_TEST(vec.X == 2.0 * INT_MAX);
+//     BOOST_TEST(vec.Y == -2.0 * INT_MAX);
+//     BOOST_TEST(vec.Z == 2.0 * INT_MAX);
+//     BOOST_TEST(vec.W == -2.0 * INT_MAX);
+// }
 
 /*BOOST_AUTO_TEST_CASE(TC6_largeNumbers, TOLERANCE)
 {
@@ -358,9 +350,7 @@ BOOST_TEST(vec.X == 0.253 * INT_MAX);
 BOOST_TEST(vec.Y == -1.2 * INT_MAX);
 }*/
 BOOST_AUTO_TEST_SUITE_END()
-#pragma endregion HMM_Vec4i
 
-#pragma region R_HMM_Vec4
 BOOST_AUTO_TEST_SUITE(S_HMM_Vec4)
 
 BOOST_AUTO_TEST_CASE(TC1_zeros, TOLERANCE) {
@@ -413,19 +403,19 @@ BOOST_AUTO_TEST_CASE(TC4_posNeg, TOLERANCE) {
     BOOST_TEST(vec.W == -30.8);
 }
 
-BOOST_AUTO_TEST_CASE(TC5_largeNumbers, TOLERANCE) {
-    auto vec = HMM_Vec4(INT_MAX + 0.1, INT_MAX + 0.2, INT_MAX - 0.1, INT_MAX - 0.55);
-    BOOST_TEST(vec.X == INT_MAX + 0.1);
-    BOOST_TEST(vec.Y == INT_MAX + 0.2);
-    BOOST_TEST(vec.Z == INT_MAX - 0.1);
-    BOOST_TEST(vec.W == INT_MAX - 0.55);
+// BOOST_AUTO_TEST_CASE(TC5_largeNumbers, TOLERANCE) {
+//     auto vec = HMM_Vec4(INT_MAX + 0.1, INT_MAX + 0.2, INT_MAX - 0.1, INT_MAX - 0.55);
+//     BOOST_TEST(vec.X == INT_MAX + 0.1);
+//     BOOST_TEST(vec.Y == INT_MAX + 0.2);
+//     BOOST_TEST(vec.Z == INT_MAX - 0.1);
+//     BOOST_TEST(vec.W == INT_MAX - 0.55);
 
-    vec = HMM_Vec4(2.0 * INT_MAX, -2.0 * INT_MAX, 2.0 * INT_MAX, -2.0 * INT_MAX);
-    BOOST_TEST(vec.X == 2.0 * INT_MAX);
-    BOOST_TEST(vec.Y == -2.0 * INT_MAX);
-    BOOST_TEST(vec.Z == 2.0 * INT_MAX);
-    BOOST_TEST(vec.W == -2.0 * INT_MAX);
-}
+//     vec = HMM_Vec4(2.0 * INT_MAX, -2.0 * INT_MAX, 2.0 * INT_MAX, -2.0 * INT_MAX);
+//     BOOST_TEST(vec.X == 2.0 * INT_MAX);
+//     BOOST_TEST(vec.Y == -2.0 * INT_MAX);
+//     BOOST_TEST(vec.Z == 2.0 * INT_MAX);
+//     BOOST_TEST(vec.W == -2.0 * INT_MAX);
+// }
 
 /*BOOST_AUTO_TEST_CASE(TC6_largeNumbers, TOLERANCE)
 {
@@ -438,9 +428,7 @@ BOOST_TEST(vec.X == 0.253 * INT_MAX);
 BOOST_TEST(vec.Y == -1.2 * INT_MAX);
 }*/
 BOOST_AUTO_TEST_SUITE_END()
-#pragma endregion HMM_Vec4
 
-#pragma region R_HMM_Vec4v
 BOOST_AUTO_TEST_SUITE(S_HMM_Vec4v)
 
 BOOST_AUTO_TEST_CASE(TC1_zeros, TOLERANCE) {
@@ -500,21 +488,21 @@ BOOST_AUTO_TEST_CASE(TC4_posNeg, TOLERANCE) {
     BOOST_TEST(vec.W == -412);
 }
 
-BOOST_AUTO_TEST_CASE(TC5_largeNumbers, TOLERANCE) {
-    hmm_vec3 v3 = HMM_Vec3i(INT_MAX, INT_MAX, INT_MAX);
-    auto vec = HMM_Vec4v(v3, INT_MAX);
-    BOOST_TEST(vec.X == INT_MAX);
-    BOOST_TEST(vec.Y == INT_MAX);
-    BOOST_TEST(vec.Z == INT_MAX);
-    BOOST_TEST(vec.W == INT_MAX);
+// BOOST_AUTO_TEST_CASE(TC5_largeNumbers, TOLERANCE) {
+//     hmm_vec3 v3 = HMM_Vec3i(INT_MAX, INT_MAX, INT_MAX);
+//     auto vec = HMM_Vec4v(v3, INT_MAX);
+//     BOOST_TEST(vec.X == INT_MAX);
+//     BOOST_TEST(vec.Y == INT_MAX);
+//     BOOST_TEST(vec.Z == INT_MAX);
+//     BOOST_TEST(vec.W == INT_MAX);
 
-    v3 = HMM_Vec3i(2.0 * INT_MAX, -2.0 * INT_MAX, 2.0 * INT_MAX);
-    vec = HMM_Vec4v(v3, -2.0 * INT_MAX);
-    BOOST_TEST(vec.X == 2.0 * INT_MAX);
-    BOOST_TEST(vec.Y == -2.0 * INT_MAX);
-    BOOST_TEST(vec.Z == 2.0 * INT_MAX);
-    BOOST_TEST(vec.W == -2.0 * INT_MAX);
-}
+//     v3 = HMM_Vec3i(2.0 * INT_MAX, -2.0 * INT_MAX, 2.0 * INT_MAX);
+//     vec = HMM_Vec4v(v3, -2.0 * INT_MAX);
+//     BOOST_TEST(vec.X == 2.0 * INT_MAX);
+//     BOOST_TEST(vec.Y == -2.0 * INT_MAX);
+//     BOOST_TEST(vec.Z == 2.0 * INT_MAX);
+//     BOOST_TEST(vec.W == -2.0 * INT_MAX);
+// }
 
 /*BOOST_AUTO_TEST_CASE(TC6_largeNumbers, TOLERANCE)
 {
@@ -527,9 +515,7 @@ BOOST_TEST(vec.X == 0.253 * INT_MAX);
 BOOST_TEST(vec.Y == -1.2 * INT_MAX);
 }*/
 BOOST_AUTO_TEST_SUITE_END()
-#pragma endregion HMM_Vec4v
 
-#pragma region R_HMM_Mat4
 BOOST_AUTO_TEST_SUITE(S_HMM_Mat4)
 BOOST_AUTO_TEST_CASE(TC1) {
     hmm_mat4 mat = HMM_Mat4();
@@ -541,9 +527,7 @@ BOOST_AUTO_TEST_CASE(TC1) {
 }
 
 BOOST_AUTO_TEST_SUITE_END()
-#pragma endregion HMM_Mat4
 
-#pragma region R_HMM_Mat4d
 BOOST_AUTO_TEST_SUITE(S_HMM_Mat4d)
 BOOST_AUTO_TEST_CASE(TC1_Zeros) {
     hmm_mat4 mat = HMM_Mat4d(0);
@@ -594,4 +578,3 @@ BOOST_AUTO_TEST_CASE(TC4_LargeNumber) {
     }
 }
 BOOST_AUTO_TEST_SUITE_END()
-#pragma endregion HMM_Mat4d
