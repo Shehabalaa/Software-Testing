@@ -32,8 +32,6 @@ test_mul
 ------
 ------
 test_scalarOperations
-/home/shehab/Desktop/Software-Testing/./HMM.h:553:18: warning: Survived: Replaced > with >= [cxx_gt_to_ge]
-/home/shehab/Desktop/Software-Testing/./HMM.h:549:13: warning: Survived: Replaced < with <= [cxx_lt_to_le]
 ------
 ------
 test_sub
