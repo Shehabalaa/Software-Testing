@@ -20,46 +20,46 @@ this file should cover the following functions in hmm.h
 
 BOOST_AUTO_TEST_SUITE(HMM_Scalar)
 
-BOOST_AUTO_TEST_CASE(SIN, TOLERANCE) {
-    BOOST_TEST(HMM_SINF(0) == sinf(0));
-    BOOST_TEST(HMM_SINF(10) == sinf(10));
-    BOOST_TEST(HMM_SINF(-10) == sinf(-10));
-    BOOST_TEST(HMM_SINF(100) == sinf(100));
-    BOOST_TEST(HMM_SINF(+0.005) == sinf(+0.005));
+BOOST_AUTO_TEST_CASE(SIN) {
+    BOOST_TEST(HMM_SinF(0) == sinf(0));
+    BOOST_TEST(HMM_SinF(10) == sinf(10));
+    BOOST_TEST(HMM_SinF(-10) == sinf(-10));
+    BOOST_TEST(HMM_SinF(100) == sinf(100));
+    BOOST_TEST(HMM_SinF(+0.005) == sinf(+0.005));
 }
 
-BOOST_AUTO_TEST_CASE(COS,TOLERANCE) {
-    BOOST_TEST(HMM_COSF(0) == cosf(0));
-    BOOST_TEST(HMM_COSF(10) == cosf(10));
-    BOOST_TEST(HMM_COSF(-10) == cosf(-10));
-    BOOST_TEST(HMM_COSF(100) == cosf(100));
-    BOOST_TEST(HMM_COSF(+0.005) == cosf(+0.005));
+BOOST_AUTO_TEST_CASE(COS) {
+    BOOST_TEST(HMM_CosF(0) == cosf(0));
+    BOOST_TEST(HMM_CosF(10) == cosf(10));
+    BOOST_TEST(HMM_CosF(-10) == cosf(-10));
+    BOOST_TEST(HMM_CosF(100) == cosf(100));
+    BOOST_TEST(HMM_CosF(+0.005) == cosf(+0.005));
 }
 
-BOOST_AUTO_TEST_CASE(TAN,TOLERANCE) {
-    BOOST_TEST(HMM_TANF(0) == tanf(0));
-    BOOST_TEST(HMM_TANF(10) == tanf(10));
-    BOOST_TEST(HMM_TANF(-10) == tanf(-10));
-    BOOST_TEST(HMM_TANF(90) == tanf(90));
-    BOOST_TEST(HMM_TANF(HMM_PI32) == tanf(HMM_PI32));
-    BOOST_TEST(HMM_TANF(+0.005) == tanf(+0.005));
+BOOST_AUTO_TEST_CASE(TAN) {
+    BOOST_TEST(HMM_TanF(0) == tanf(0));
+    BOOST_TEST(HMM_TanF(10) == tanf(10));
+    BOOST_TEST(HMM_TanF(-10) == tanf(-10));
+    BOOST_TEST(HMM_TanF(90) == tanf(90));
+    BOOST_TEST(HMM_TanF(HMM_PI32) == tanf(HMM_PI32));
+    BOOST_TEST(HMM_TanF(+0.005) == tanf(+0.005));
 }
 
-BOOST_AUTO_TEST_CASE(EXP,TOLERANCE) {
-    BOOST_TEST(HMM_EXPF(0) == expf(0));
-    BOOST_TEST(HMM_EXPF(10) == expf(10));
-    BOOST_TEST(HMM_EXPF(-10) == expf(-10));
-    BOOST_TEST(HMM_EXPF(90) == expf(90));
-    BOOST_TEST(HMM_EXPF(+0.005) == expf(+0.005));
+BOOST_AUTO_TEST_CASE(EXP) {
+    BOOST_TEST(HMM_ExpF(0) == expf(0));
+    BOOST_TEST(HMM_ExpF(10) == expf(10));
+    BOOST_TEST(HMM_ExpF(-10) == expf(-10));
+    BOOST_TEST(HMM_ExpF(90) == expf(90));
+    BOOST_TEST(HMM_ExpF(+0.005) == expf(+0.005));
 }
 
-BOOST_AUTO_TEST_CASE(LOGF,TOLERANCE) {
-    BOOST_TEST(HMM_LOGF(0) == logf(0));
-    BOOST_TEST(HMM_LOGF(1) == logf(1));
-    BOOST_TEST(HMM_LOGF(10) == logf(10));
-    // BOOST_TEST(HMM_LOGF(-10) == logf(-10)); // -nan can't asserted with -nan
-    BOOST_TEST(HMM_LOGF(90) == logf(90));
-    BOOST_TEST(HMM_LOGF(+0.005) == logf(+0.005));
+BOOST_AUTO_TEST_CASE(LOGF) {
+    BOOST_TEST(HMM_LogF(0) == logf(0));
+    BOOST_TEST(HMM_LogF(1) == logf(1));
+    BOOST_TEST(HMM_LogF(10) == logf(10));
+    // BOOST_TEST(HMM_LogF(-10) == logf(-10)); // -nan can't asserted with -nan
+    BOOST_TEST(HMM_LogF(90) == logf(90));
+    BOOST_TEST(HMM_LogF(+0.005) == logf(+0.005));
 }
 
 BOOST_AUTO_TEST_CASE(ToRadians,TOLERANCE) {
@@ -71,22 +71,22 @@ BOOST_AUTO_TEST_CASE(ToRadians,TOLERANCE) {
     BOOST_TEST(HMM_ToRadians(-90) == -1 * HMM_PI32 / 2);
 }
 
-BOOST_AUTO_TEST_CASE(SQUAREROOT,TOLERANCE) {
+BOOST_AUTO_TEST_CASE(SQUAREROOT) {
     BOOST_TEST(HMM_SquareRootF(0) == 0);
 
-    BOOST_TEST(HMM_SquareRootF(90) == sqrt(90));
+    BOOST_TEST(HMM_SquareRootF(90) == sqrtf(90));
 
-    BOOST_TEST(HMM_SquareRootF(45) == sqrt(45));
+    BOOST_TEST(HMM_SquareRootF(45) == sqrtf(45));
 
-    BOOST_TEST(HMM_SquareRootF(405) == sqrt(405));
+    BOOST_TEST(HMM_SquareRootF(405) == sqrtf(405));
 }
 
 BOOST_AUTO_TEST_CASE(Power,TOLERANCE) {
     BOOST_TEST(HMM_PowerF(0, 10) == 0);
 
-    BOOST_TEST(HMM_PowerF(5, 2) == 25.0);
+    BOOST_TEST(HMM_PowerF(5, 2) == 25.0f);
 
-    BOOST_TEST(HMM_PowerF(2, -3) == (1.0 / 8));
+    BOOST_TEST(HMM_PowerF(2, -3) == (1.0f / 8));
 }
 
 BOOST_AUTO_TEST_CASE(LERP,TOLERANCE) {
@@ -106,7 +106,7 @@ BOOST_AUTO_TEST_CASE(Clammp,TOLERANCE) {
 
     BOOST_TEST(HMM_Clamp(-10, -11, 20) == -10);
 
-    BOOST_TEST(HMM_Clamp(0.0005, 0.0006, 0.0007) == 0.0006);
+    BOOST_TEST(HMM_Clamp(0.0005, 0.0006, 0.0007) == 0.0006f);
 }
 
 BOOST_AUTO_TEST_SUITE_END()

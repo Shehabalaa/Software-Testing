@@ -66,7 +66,7 @@ BOOST_AUTO_TEST_CASE(TC4_posNeg) {
 BOOST_AUTO_TEST_CASE(TC5_largeNumbers, TOLERANCE) {
     hmm_vec2 left = HMM_Vec2i(INT_MAX, INT_MAX), right = HMM_Vec2i(INT_MAX, -1 * INT_MAX);
     auto res = left + right;
-    BOOST_TEST(res.X == 2.0 * INT_MAX);
+    BOOST_TEST(res.X == 2.0f * INT_MAX);
     BOOST_TEST(res.Y == 0);
 }
 
@@ -146,9 +146,9 @@ BOOST_AUTO_TEST_CASE(TC4_posNeg) {
 BOOST_AUTO_TEST_CASE(TC5_largeNumbers, TOLERANCE) {
     hmm_vec3 left = HMM_Vec3i(INT_MAX, INT_MAX, -1 * INT_MAX), right = HMM_Vec3i(INT_MAX, -1 * INT_MAX, -1 * INT_MAX);
     auto res = left + right;
-    BOOST_TEST(res.X == 2.0 * INT_MAX);
+    BOOST_TEST(res.X == 2.0f * INT_MAX);
     BOOST_TEST(res.Y == 0);
-    BOOST_TEST(res.Z == -2.0 * INT_MAX);
+    BOOST_TEST(res.Z == -2.0f * INT_MAX);
 }
 
 BOOST_AUTO_TEST_SUITE_END()
@@ -236,10 +236,10 @@ BOOST_AUTO_TEST_CASE(TC4_posNeg) {
 BOOST_AUTO_TEST_CASE(TC5_largeNumbers, TOLERANCE) {
     hmm_vec4 left = HMM_Vec4i(INT_MAX, INT_MAX, -1 * INT_MAX, INT_MAX), right = HMM_Vec4i(INT_MAX, -1 * INT_MAX, -1 * INT_MAX, INT_MAX);
     auto res = left + right;
-    BOOST_TEST(res.X == 2.0 * INT_MAX);
+    BOOST_TEST(res.X == 2.0f * INT_MAX);
     BOOST_TEST(res.Y == 0);
-    BOOST_TEST(res.Z == -2.0 * INT_MAX);
-    BOOST_TEST(res.W == 2.0 * INT_MAX);
+    BOOST_TEST(res.Z == -2.0f * INT_MAX);
+    BOOST_TEST(res.W == 2.0f * INT_MAX);
 }
 
 BOOST_AUTO_TEST_SUITE_END()
