@@ -5,7 +5,7 @@ this file should cover the following functions in hmm.h
 - hmm_mat4 HMM_LookAt(hmm_vec3 Eye, hmm_vec3 Center, hmm_vec3 Up);
 */
 
-#define BOOST_TEST_MAIN 
+#define BOOST_TEST_MAIN
 #pragma once
 #include <boost/test/unit_test.hpp>
 
@@ -304,6 +304,50 @@ BOOST_AUTO_TEST_CASE(ALLZEROS) {
     hmm_mat4 lookat = HMM_LookAt(Eye, Center, Up);
 
     BOOST_CHECK_EQUAL(Mat4Equal(lookat, expectedOutput), true);
+}
+
+BOOST_AUTO_TEST_CASE(SCALING_VECTOR) {
+    hmm_vec3 vec = {1., 2., 3.};
+
+    hmm_mat4 mat = HMM_Scale(vec);
+
+    hmm_mat4 expectedRes = {0.f};
+    for (int i = 0; i < 3; ++i) expectedRes.Elements[i][i] = vec.Elements[i];
+    expectedRes.Elements[3][3] = 1.f;
+
+    BOOST_TEST(Mat4Equal(expectedRes, mat) == true);
+}
+
+BOOST_AUTO_TEST_CASE(ROTATING_VECTOR) {
+    hmm_vec3 vec = {1.f, 2.f, 3.f};
+    float theta = 180.f / 3;
+
+    hmm_mat4 mat = HMM_Rotate(theta, vec);
+
+    // normalize
+    vector<float> myvec = {1.f, 2.f, 3.f};
+    float norm = sqrtf(accumulate(begin(myvec), end(myvec), 0.0, [](auto a, auto b) { return a + b * b; }));
+    transform(begin(myvec), end(myvec), begin(myvec), [&](auto a) { return a / norm; });
+
+    theta = HMM_PI32 / 3;
+    float comp = 1.f - cosf(theta);
+    hmm_mat4 expectedRes = {0.f};
+
+    expectedRes.Elements[0][0] = cosf(theta) + myvec[0] * myvec[0] * comp;
+    expectedRes.Elements[0][1] = myvec[0] * myvec[1] * comp + myvec[2] * sinf(theta);
+    expectedRes.Elements[0][2] = myvec[0] * myvec[2] * comp - myvec[1] * sinf(theta);
+
+    expectedRes.Elements[1][0] = myvec[0] * myvec[1] * comp - myvec[2] * sinf(theta);
+    expectedRes.Elements[1][1] = cosf(theta) + myvec[1] * myvec[1] * comp;
+    expectedRes.Elements[1][2] = myvec[1] * myvec[2] * comp + myvec[0] * sinf(theta);
+
+    expectedRes.Elements[2][0] = myvec[0] * myvec[2] * comp + myvec[1] * sinf(theta);
+    expectedRes.Elements[2][1] = myvec[1] * myvec[2] * comp - myvec[0] * sinf(theta);
+    expectedRes.Elements[2][2] = cosf(theta) + myvec[2] * myvec[2] * comp;
+
+    expectedRes.Elements[3][3] = 1.;
+
+    BOOST_TEST(Mat4Equal(expectedRes, mat) == true);
 }
 
 BOOST_AUTO_TEST_SUITE_END()
