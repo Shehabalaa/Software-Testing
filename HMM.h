@@ -509,6 +509,7 @@ HMM_LengthVec4(hmm_vec4 A)
 HINLINE float
 HMM_Power(float Base, int Exponent)
 {
+	/*
 	float Result = 1.0f;
 	float Mul = Exponent < 0 ? 1.f / Base : Base;
 	unsigned int X = Exponent < 0 ? -Exponent : Exponent;
@@ -523,7 +524,20 @@ HMM_Power(float Base, int Exponent)
 		X >>= 1;
 	}
 
-	return (Result);
+	return (Result);*/
+
+	float result = 1;
+	int exp = Exponent;
+	if(Exponent < 0) {
+		exp = -Exponent;
+	}
+
+	for(int i=0; i < exp; i++)
+    	   result*= Base;
+	if(Exponent < 0) {
+		return 1 / float(result);
+	}
+	return result;
 }
 
 HINLINE float
@@ -1574,7 +1588,8 @@ HINLINE hmm_vec2 &
 operator*=(hmm_vec2 &Left, float Right)
 {
 	return (Left = Left * Right);
-}
+}13/19 Test #13: test_predicates ..................   Passed    0.00 sec
+
 
 HINLINE hmm_vec3 &
 operator*=(hmm_vec3 &Left, float Right)
