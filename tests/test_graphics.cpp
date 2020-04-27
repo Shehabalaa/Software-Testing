@@ -11,8 +11,6 @@ this file should cover the following functions in hmm.h
 
 #include "test_helpers.hpp"
 
-// my implementation of the projection function from http://learnwebgl.brown37.net/08_projections/projections_ortho.html
-
 bool Mat4Equal(hmm_mat4 m1, hmm_mat4 m2) {
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
@@ -35,6 +33,7 @@ void printMatrix(hmm_mat4 m1) {
     }
 }
 
+// https://www.scratchapixel.com/lessons/3d-basic-rendering/perspective-and-orthographic-projection-matrix/orthographic-projection-matrix
 hmm_mat4 constructOrhographic(float Left, float Right, float Bottom, float Top, float Near, float Far) {
     hmm_mat4 Result = HMM_Mat4d(1.0f);
 
