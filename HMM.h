@@ -1588,7 +1588,7 @@ HINLINE hmm_vec2 &
 operator*=(hmm_vec2 &Left, float Right)
 {
 	return (Left = Left * Right);
-}13/19 Test #13: test_predicates ..................   Passed    0.00 sec
+}
 
 
 HINLINE hmm_vec3 &
