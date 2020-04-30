@@ -1,51 +1,59 @@
 test_add
-------
-------
+[info] Mutation score: 100%
+--------------
 test_add_op
-------
-------
+[info] Mutation score: 100%
+--------------
 test_add_op2
-------
-------
+[info] Mutation score: 100%
+--------------
 test_construction
-------
-------
+[info] Mutation score: 100%
+--------------
 test_cross
-------
-------
+[info] Mutation score: 100%
+--------------
 test_div
-------
-------
+[info] Mutation score: 100%
+--------------
 test_dot
-------
-------
+[info] Mutation score: 100%
+--------------
 test_graphics
-------
-------
+[info] Mutation score: 100%
+--------------
 test_length
-------
-------
+[info] Mutation score: 100%
+--------------
 test_lengthSquared
-------
-------
+[info] Mutation score: 100%
+--------------
 test_mul
-------
-------
+[info] Mutation score: 100%
+--------------
+test_normalize
+[info] Mutation score: 100%
+--------------
+test_predicates
+[info] Mutation score: 100%
+--------------
 test_scalarOperations
-------
-------
+/home/shehab/Desktop/Software-Testing/./HMM.h:553:18: warning: Survived: Replaced > with >= [cxx_gt_to_ge]
+/home/shehab/Desktop/Software-Testing/./HMM.h:549:13: warning: Survived: Replaced < with <= [cxx_lt_to_le]
+[info] Mutation score: 80%
+--------------
 test_sub
-------
-------
+[info] Mutation score: 100%
+--------------
 test_sub_op
-------
-------
+[info] Mutation score: 100%
+--------------
 test_sub_op2
-------
-------
+[info] Mutation score: 100%
+--------------
 test_transformations
-------
-------
+[info] Mutation score: 100%%
+--------------
 test_transpose
-------
-------
+[info] Mutation score: 100%
+-------------
